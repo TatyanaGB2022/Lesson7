@@ -5,6 +5,12 @@
 // 1 4 7 2
 // 5 9 2 3
 // 8 4 2 4
+// Новый массив будет выглядеть 
+// вот так:
+// 1   4  7  2
+// 5  81  2  9
+// 8   4  2  4
+
 
 int[,] GenereteArray(int row, int col)
 {
@@ -18,6 +24,7 @@ int[,] GenereteArray(int row, int col)
   }
   return array;
 }
+
 void PrintArray(int[,] array)
 {
   int row = array.GetLength(0);
@@ -32,7 +39,7 @@ void PrintArray(int[,] array)
   }
 }
 
-void Power2EvenInd(int[,] array)
+void Power2EvenInt(int[,] array)
 {
   int row = array.GetLength(0);
   int col = array.GetLength(1);
@@ -48,5 +55,5 @@ void Power2EvenInd(int[,] array)
 int [,] array = GenereteArray(3, 4);
 PrintArray(array);
 System.Console.WriteLine();
-Power2EvenInd(array);
+Power2EvenInt(array);
 PrintArray(array);
