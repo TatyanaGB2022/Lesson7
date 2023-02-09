@@ -29,6 +29,7 @@ void PrintArray(int[,] arr)
     Console.WriteLine();
   }
 }
+
 (int, int) FindPosition(int[,] arr, int number)
 {
   for (int i = 0; i < arr.GetLength(0); i++)

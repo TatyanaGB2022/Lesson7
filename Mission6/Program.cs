@@ -1,4 +1,5 @@
-﻿// Задача 5: Задайте двумерный массив. Найдите максимальный элемент массива и среднее арифметическое всех элементов массива.
+﻿// Задача 5: Задайте двумерный массив. Найдите максимальный элемент массива и среднее арифметическое 
+// всех элементов массива.
 // Например, такой массив:
 // 1 4 7 2
 // 5 9 2 3
@@ -54,10 +55,10 @@ double AverageElements(int[,] array)
   return sum / array.Length;
 }
 
-int[,] matrix=new int[3,3];
+int[,] matrix = new int[3, 3];
 FillArray(matrix);
 PrintArray(matrix);
 System.Console.WriteLine($"Максимум = {MaxElement(matrix)}");
 System.Console.WriteLine($"Среднее = {AverageElements(matrix)}");
-(int a, int b) s=(2,3);
+(int a, int b) s = (2, 3);
 System.Console.WriteLine(s.a);
